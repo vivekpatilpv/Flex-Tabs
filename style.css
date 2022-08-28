@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: black;
+}
+
+/* TAB SECTION STARTS */
+main {
+  position: absolute;
+}
+
+.container {
+  height: 80px;
+  width: 875px;
+  line-height: 80px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  margin-left: 375px;
+  padding-left: 59px;
+  margin-top: -220px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+  /* GLASS EFFECT */
+  background: rgba(121, 202, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(121, 202, 255, 0.67);
+}
+
+.container .menu {
+  display: flex;
+  position: relative;
+}
+
+.container .menu li {
+  list-style: none;
+  flex: 1;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container .menu li a {
+  color: #1d1f20;
+  transition: color 0.3s ease;
+}
+
+.container .menu li:hover a {
+  color: #f23b26;
+}
+
+.container .menu li:first-child a {
+  color: #f23b26;
+}
+
+.container .menu .line {
+  position: absolute;
+  height: 5px;
+  width: 5%;
+  background: #f23b26;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.container .menu li:nth-child(2):hover~.line {
+  left: 20%;
+}
+
+.container .menu li:nth-child(3):hover~.line {
+  left: 40%;
+}
+
+.container .menu li:nth-child(4):hover~.line {
+  left: 60%;
+}
+
+.container .menu li:nth-child(5):hover~.line {
+  left: 80%;
+}
+/* TAB SECTION ENDS */
+
+/* BACKGROUND SECTION STARTS */
+.bg {
+  background-image: url(https://i.pinimg.com/564x/44/42/fa/4442fa48060078a51061eca212350910.jpg), url(https://i.pinimg.com/736x/90/a3/b3/90a3b380ce684c486ebca2e59ec35cb7.jpg), url(https://i.pinimg.com/564x/a3/9d/21/a39d21dd1ffa3a82edf5f5c4e74c108c.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  height: 100%;
+
+  background-position: left top, center top, right top;
+  background-size: 25% 50% 100%;
+
+  opacity: 0.4;
+  position: relative;
+}
+
+/* BACKGROUND SECTION ENDS  */
